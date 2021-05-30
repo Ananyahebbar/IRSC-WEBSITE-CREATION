@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./IRSC GALLERY.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GALLERY</title>
+    <style>
+        nav {
+  top: -10%;
+  background: none;
+  box-shadow: o 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav img .logo {
+  width: 150px;
+  position: absolute;
+  top: 17px;
+  left: 12%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  background: none;
+  margin: 0 15px;
+  margin-top: 25px;
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  padding: -3px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #d44f45;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+nav a.gallery {
+  color: white;
+  padding: 1px;
+  margin: 0 5px 0 10px;
+  background: #d44f45;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.horline {
+  padding: 15px;
+  background-color: #d44f45;
+  background-size: cover;
+}
+
+.l1 {
+  position: absolute;
+  float: right;
+  left: 12.5%;
+  top: 5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+.l2 {
+  position: absolute;
+  float: right;
+  left: 11%;
+  top: 8%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+.l3 {
+  position: absolute;
+  float: right;
+  left: 13%;
+  top: 11%;
+  text-align: center;
+  font-size: 25px;
+  color: #883b08;
+  font-weight: bold;
+}
+
+.glr {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Viga", sans-serif;
+  padding: 10px;
+  background: linear-gradient(to right, #000 50%, #0c61af 50%, #0c61af);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.glr:hover {
+  background-position: -100%;
+}
+
+.foot {
+  background: #d44f45;
+  padding: 150px;
+
+}
+
+.f1 {
+  position: absolute;
+  top: 285%;
+  left: 5%;
+}
+
+.df1,
+.df2,
+.df3 {
+  text-align: center;
+}
+
+.df1,
+.df2 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+
+.df3 {
+  font-size: 25px;
+  color: #883b08;
+  font-weight: bold;
+}
+
+.f2 {
+  position: absolute;
+  top: 280%;
+  left: 20%;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+}
+
+.continfo {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.s1 {
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.s2 {
+  margin-top: 10px;
+  margin-left: -80px;
+}
+
+.s2 div {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.email {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+  margin-top: 30px;
+}
+
+.s3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.s4 {
+  margin-left: -80px;
+}
+
+.s4 a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.f3 {
+  position: absolute;
+  top: 280%;
+  left: 55%;
+}
+
+.flw-us {
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.f3 ul {
+  margin-left: -40px;
+}
+
+.f3 ul li {
+  list-style: none;
+}
+.f3 ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
+  line-height: 2em;
+}
+.f3 ul li i {
+  font-size: 25px;
+}
+.fa-instagram {
+  width: 28px;
+  height: 26px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #007bb5;
+  color: white;
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+  color: white;
+}
+
+.fa-linkedin {
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: -2px;
+  background: #3b5998;
+  color: white;
+}
+.f4 {
+  position: absolute;
+  top: 280%;
+  left: 85%;
+}
+.link {
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.f4 ul {
+  margin-left: -40px;
+}
+
+.f4 ul li {
+  list-style: none;
+}
+
+.f4 ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="main">
+        <div class="l1">INDIAN ROAD</div>
+        <div class="l2">SAFETY CAMPAIGN</div>
+        <div class="l3">BMSCE</div>
+        <img src="./IRSC LOGO.jpg" alt="" class="logo">
+            <ul>
+                <li><a href="#" target="_blank" class="home">Home</a></li>
+                <li><a href="#" class="gallery">Gallery</a></li>
+                <li><a href="../IRSC EVENTS/IRSC EVENTS.html" target="_blank" class="event">Events</a></li>
+                <li><a href="../IRSC NEWS LETTERS/IRSC NEWS.html" target="_blank" class="nl">News Letters</a></li>
+                <li><a href="../IRSC ABOUT US/IRSC ABOUT US.html" target="_blank" class="abtus">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="horline">
+        <span class="shrl"></span>
+    </div>
+    <div class="head">
+        <h1 class="glr">GALLERY</h1>
+        <div class="foot">
+          <div class="f1">
+              <div class="df1">INDIAN ROAD</div>
+              <div class="df2">SAFETY CAMPAIGN</div>
+              <div class="df3">BMSCE</div>
+          </div>
+          <div class="f2">
+              <div class="continfo">Contact Info</div>
+              <div class="address">
+                  <span class="s1">Address:</span>
+                  <span class="s2">
+                      <div>B.M.S. COLLEGE OF ENGINEERING</div>
+                      <div>BASAVANAGUDI, BENGALURU 560019</div>
+                  </span>
+              </div>
+              <div class="email">
+                  <span class="s3">Email-id:</span>
+                  <span class="s4">
+                      <a href="#" target="_blank" class="">bosch.irsc.bmsce@gmail.com</a>
+                  </span>
+              </div>
+          </div>
+          <div class="f3">
+              <div class="flw-us">Follow us</div>
+              <ul>
+                  <li>
+                      <i class="fa fa-instagram"></i>
+                      <a href="https://www.instagram.com/bmsce_roadsafety/" target="_blank" class="instagram">bmsce_roadsafety</a>
+                  </li>
+                  <li>
+                      <i class="fa fa-linkedin"></i>
+                      <a href="https://www.linkedin.com/company/indian-road-safety-campaign/" target="_blank" class="linked-in">Indian Road Safety Campaign, BMSCE</a>
+                  </li>
+                  <li>
+                      <i class="fa fa-facebook"></i>
+                      <a href="https://www.facebook.com/bmsce.roadsafety" target="_blank" class="facebook">IRSC-BMSCE</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="f4">
+              <div class="link">Links</div>
+              <ul>
+                  <li><a href="#" target="_blank"class="home-link">Home</a></li>
+                  <li><a href="../IRSC GALLERY/IRSC GALLERY.html" target="_blank" class="gallery-link">Gallery</a></li>
+                  <li><a href="../IRSC EVENTS/IRSC EVENTS.html" target="_blank"class="newsl-link">Events</a></li>
+                  <li><a href="../IRSC ABOUT US/IRSC ABOUT US.html" target="_blank"class="about-link">About us</a></li>
+              </ul>
+          </div>
+      </div>
+</body>
+</html>

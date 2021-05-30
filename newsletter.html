@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./IRSC NEWS.css">
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NEWS LETTERS</title>
+    <style>
+        nav {
+  top: -10%;
+  background: none;
+  box-shadow: o 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav img .logo {
+  width: 150px;
+  position: absolute;
+  top: 17px;
+  left: 12%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li {
+  background: none;
+  margin: 0 15px;
+  margin-top: 25px;
+  display: inline-block;
+  list-style: none;
+}
+
+nav ul li a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 19px;
+  padding: -3px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #d44f45;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.l1 {
+  position: absolute;
+  float: right;
+  left: 12.5%;
+  top: 5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+.l2 {
+  position: absolute;
+  float: right;
+  left: 11%;
+  top: 8%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+.l3 {
+  position: absolute;
+  float: right;
+  left: 13%;
+  top: 11%;
+  text-align: center;
+  font-size: 25px;
+  color: #883b08;
+  font-weight: bold;
+}
+
+nav a.nl {
+  color: white;
+  padding: 1px;
+  margin: 0 5px 0 10px;
+  background: #d44f45;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.horline {
+  padding: 15px;
+  background-color: #d44f45;
+  background-size: cover;
+}
+
+.nw {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Viga", sans-serif;
+  padding: 10px;
+  background: linear-gradient(to right, #000 50%, #068b23 50%, #068b23);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+.nw:hover {
+  background-position: -100%;
+}
+
+.gridpost {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 55px;
+  margin: 20px 0 100px 50px;
+}
+
+.post {
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.post img {
+  display: block;
+  width: 300px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.post:hover .post-s {
+  width: 300px;
+}
+
+.post-s {
+  width: 0;
+  height: 400px;
+  background: rgba(18, 151, 6, 0.466);
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.post-s h2 {
+  color: black;
+  font-size: 30px;
+  border: 6px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 40px 0 40px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-s a {
+  padding: 10px;
+  font-size: 20px;
+  color: #3b5998;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #000;
+  text-decoration: none;
+  border: 3px solid blue;
+  margin: 0 50px 0 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.post-s a:hover {
+  background: rgba(3, 110, 17, 0.575);
+}
+
+.foot {
+  background: #d44f45;
+  padding: 150px;
+}
+
+.f1 {
+  position: absolute;
+  top: 200%;
+  left: 5%;
+}
+
+.df1,
+.df2,
+.df3 {
+  text-align: center;
+}
+
+.df1,
+.df2 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+}
+
+.df3 {
+  font-size: 25px;
+  color: #883b08;
+  font-weight: bold;
+}
+
+.f2 {
+  position: absolute;
+  top: 195%;
+  left: 20%;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+}
+
+.continfo {
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.s1 {
+  margin-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.s2 {
+  margin-top: 10px;
+  margin-left: -80px;
+}
+
+.s2 div {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.email {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2px;
+  margin-top: 30px;
+}
+
+.s3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.s4 {
+  margin-left: -80px;
+}
+
+.s4 a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.f3 {
+  position: absolute;
+  top: 195%;
+  left: 55%;
+}
+
+.flw-us {
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.f3 ul {
+  margin-left: -40px;
+}
+
+.f3 ul li {
+  list-style: none;
+}
+.f3 ul li a {
+  text-decoration: none;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
+  line-height: 2em;
+}
+.f3 ul li i {
+  font-size: 25px;
+}
+.fa-instagram {
+  width: 28px;
+  height: 26px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #007bb5;
+  color: white;
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+  color: white;
+}
+
+.fa-linkedin {
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin-left: -2px;
+  background: #3b5998;
+  color: white;
+}
+.f4 {
+  position: absolute;
+  top: 195%;
+  left: 85%;
+}
+.link {
+  text-decoration: underline;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.f4 ul {
+  margin-left: -40px;
+}
+
+.f4 ul li {
+  list-style: none;
+}
+
+.f4 ul li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav class="main">
+        <img src="./IRSC LOGO.jpg" alt="" class="logo">
+        <div class="l1">INDIAN ROAD</div>
+        <div class="l2">SAFETY CAMPAIGN</div>
+        <div class="l3">BMSCE</div>
+            <ul>
+                <li><a href="#" target="_blank" class="home">Home</a></li>
+                <li><a href="../IRSC GALLERY/IRSC GALLERY.html" target="_blank" class="gallery">Gallery</a></li>
+                <li><a href="../IRSC EVENTS/IRSC EVENTS.html" target="_blank" class="event">Events</a></li>
+                <li><a href="#" class="nl">News Letters</a></li>
+                <li><a href="../IRSC ABOUT US/IRSC ABOUT US.html" target="_blank" class="abtus">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="horline">
+        <span class="shrl"></span>
+    </div>
+    <div class="head">
+        <h1 class="nw">NEWS LETTERS</h1>
+    </div>
+    <div class="gridpost">
+        <div class="post">
+            <img src="./NL.jpg" width="300px" height="400px">
+            <div class="post-s">
+                <h2>TITLE 1</h2>
+                <a href="" target="_blank" class="">READ MORE</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="./NL.jpg" width="300px" height="400px">
+            <div class="post-s">
+                <h2>TITLE 2</h2>
+                <a href="" target="_blank" class="">READ MORE</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="./NL.jpg" width="300px" height="400px">
+            <div class="post-s">
+                <h2>TITLE 3</h2>
+                <a href="" target="_blank" class="">READ MORE</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="./NL.jpg" width="300px" height="400px">
+            <div class="post-s">
+                <h2>TITLE 4</h2>
+                <a href="" target="_blank" class="">READ MORE</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="./NL.jpg" width="300px" height="400px">
+            <div class="post-s">
+                <h2>TITLE 5</h2>
+                <a href="" target="_blank" class="">READ MORE</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="./NL.jpg" width="300px" height="400px">
+            <div class="post-s">
+                <h2>TITLE-6</h2>
+                <a href="" target="_blank" class="">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="f1">
+            <div class="df1">INDIAN ROAD</div>
+            <div class="df2">SAFETY CAMPAIGN</div>
+            <div class="df3">BMSCE</div>
+        </div>
+        <div class="f2">
+            <div class="continfo">Contact Info</div>
+            <div class="address">
+                <span class="s1">Address:</span>
+                <span class="s2">
+                    <div>B.M.S. COLLEGE OF ENGINEERING</div>
+                    <div>BASAVANAGUDI, BENGALURU 560019</div>
+                </span>
+            </div>
+            <div class="email">
+                <span class="s3">Email-id:</span>
+                <span class="s4">
+                    <a href="#" target="_blank" class="">bosch.irsc.bmsce@gmail.com</a>
+                </span>
+            </div>
+        </div>
+        <div class="f3">
+            <div class="flw-us">Follow us</div>
+            <ul>
+                <li>
+                    <i class="fa fa-instagram"></i>
+                    <a href="https://www.instagram.com/bmsce_roadsafety/" target="_blank" class="instagram">bmsce_roadsafety</a>
+                </li>
+                <li>
+                    <i class="fa fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/company/indian-road-safety-campaign/" target="_blank" class="linked-in">Indian Road Safety Campaign, BMSCE</a>
+                </li>
+                <li>
+                    <i class="fa fa-facebook"></i>
+                    <a href="https://www.facebook.com/bmsce.roadsafety" target="_blank" class="facebook">IRSC-BMSCE</a>
+                </li>
+            </ul>
+        </div>
+        <div class="f4">
+            <div class="link">Links</div>
+            <ul>
+                <li><a href="#" target="_blank"class="home-link">Home</a></li>
+                <li><a href="../IRSC GALLERY/IRSC GALLERY.html" target="_blank" class="gallery-link">Gallery</a></li>
+                <li><a href="../IRSC EVENTS/IRSC EVENTS.html" target="_blank"class="newsl-link">Events</a></li>
+                <li><a href="../IRSC ABOUT US/IRSC ABOUT US.html" target="_blank"class="about-link">About us</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
